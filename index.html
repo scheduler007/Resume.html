@@ -1,0 +1,128 @@
+<!DOCTYPE html>  
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+	<title>Online Resume of Leo Jade Rosauro</title>
+ 
+
+		<meta name="description" content="A few lines about yourself" />
+		<meta name="keywords" content="photographer,graphic,designer,resume" />
+		<meta name="author" content="Leo Jade Rosauro" />
+ 
+<!-- CSS Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="CSS/Design.css" />
+</head>
+
+<body>
+
+	<!-- <h2>Tabs</h2>
+	<p>Click on the buttons inside the tabbed menu:</p> -->
+
+	<div class="tab">
+	 	<button class="tablinks" onclick="openTab(event, 'profile')">Profile</button>
+		<button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+		<button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+		<button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
+	</div>
+
+	<!-- <div id="Profile" class="tabcontent"> -->
+	
+	<img class="profilepic" src="IMG/leo_profile.jpg" width="280px" height="280px" alt="Leo Jade Rosauro"/>
+	<div class = "profile">
+			<div class="section">
+				<h3>Profile:</h3>
+				<div class="summary">
+					<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h4>
+				</div>
+			</div>
+		</div>
+	<!--Profile Information Section-->
+	<div class="header_2 tabcontent" id="profile" style="display: none">
+		<h1>Leo Jade Rosauro</h1>
+
+		<h3>Photographer / Graphic Designer</h3>
+
+		<ul class="icons_1">
+						<li><a title="address"><img class="icons" src="IMG/Home.png" alt="Blk 23 Lot 5 Maliksi St. Lupang Arenda Brgy. Sta. Ana Taytay, Rizal 1920" /><span id = "span1">Blk 23 Lot 5 Maliksi St. Lupang Arenda Brgy. Sta. Ana Taytay, Rizal 1920</span></a></li>
+						<li><a class="phone"><img class="icons" src="IMG/Phone.png" alt="(+995) 586-0847"</a><span id = "span2">(+995) 586-0847</span></li>
+						<li><a href="jaderosauro08@gmail.com" title="jaderosauro08@gmail.com"><img class="icons" src="IMG/gmail.png" alt="jaderosauro08@gmail.com" /><span id = "span3">jaderosauro08@gmail.com</span></a></li>
+						<li><a href="http://www.facebook.com/LeiRosauro" title="http://www.facebook.com/LeiRosauro" target="_blank" ><img class="icons" src="IMG/facebook-logo-button.png" alt="www.facebook.com/LeiRosauro" /><span id = "span4">www.facebook.com/LeiRosauro</span></a></li>
+						<li><a href="http://twitter.com/" title="http://twitter.com/iamLeoJade" target="_blank" ><img class="icons" src="IMG/twitter-logo-button.png" alt="http://twitter.com/iamLeoJade" /><span id = "span5">twitter.com/iamLeoJade</span></a></li>
+					</ul>
+	</div>
+
+	<div id="skills" class="tabcontent" >
+		<h3>Skills</h3>
+		<ul class="list1">
+			<li>Adobe Photoshop</li>
+			<li>Adobe After Effects</li>
+			<li>Photography</li>
+			<li>Videography</li>
+		</ul>
+	</div>
+		
+	<div id="Education" class="tabcontent" style="display: none">
+		<h3>Education</h3>
+		<ul class="bus1">
+			STI Academic Center Ortigas - Cainta<br/>
+			Ortigas Ave. Extension<br/>
+			Cainta, Rizal Philippines
+		</ul>
+		<div class="edu-info">
+			<a href="http://www.sti.edu/" title="STI Academic Center">www.sti.edu</a>
+		</div>
+	</div>
+	<style type="text/css">
+		.gallery
+		{
+			border-style: outset;
+			width: 90%;
+		}
+		.gallery img
+		{
+			width: 30%;
+			height: 100%;
+		}
+	</style>
+
+	<div id="Gallery" class="tabcontent" style="display: none">
+		<h3>Gallery</h3>
+		<form class="gallery">
+			<img src="IMG/Camp.jpg">
+			<img src="IMG/leo_profile.jpg">
+
+<img src="IMG/leo_profile.jpg">
+
+<img src="IMG/leo_profile.jpg">
+
+<img src="IMG/leo_profile.jpg">
+
+<img src="IMG/leo_profile.jpg">
+
+
+
+		</form>
+				
+
+
+
+	</div>
+	<script>
+		function openTab(evt, tabName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
